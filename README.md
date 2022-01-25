@@ -1,3 +1,3 @@
 # Git_Projects
-# im student from platzi, google coursera and udemy, im studing data analisys and web development.
+# print(hello wolrd! im data analisys an web develpment, from platzi, google coursera and udemy).
 # This Project is a personal git testing while im doing programming lenguages and data science careers.
