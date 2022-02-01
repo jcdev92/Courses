@@ -1,4 +1,5 @@
 <?php
+
 class Car {
 public $id = integer;
 public $license = string;

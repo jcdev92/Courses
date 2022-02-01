@@ -1,3 +1,5 @@
+<?php
+
 class Account {
 public $id = integer;
 public $name = string;
