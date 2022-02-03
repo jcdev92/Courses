@@ -12,7 +12,7 @@ function __construct($license, $driver) {
 }
 
 public function PrintDataCar() {
-    echo "license: $this->license, conductor: {$this->driver->name}, document: {$this->driver->document}";
+    echo "license: $this->license, conductor: {$this->driver->name}, document: {$this->driver->document} \n";
     }
 
 }
