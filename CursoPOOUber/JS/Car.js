@@ -1,15 +1,13 @@
 class Car { 
-    constructor(id, model, placa, driver, passenger) {
+    constructor(license, driver) {
         this.id;
-        this.model = model;
-        this.placa = placa;
+        this.license = license;                       // string
         this.driver = driver;
         this.passenger;
     }
     printDataCar = () => {
-        console.log('Modelo: ' + this.model);
-        console.log('Placa: ' + this.placa);
-        console.log('Datos del Conductor: ')
+        console.log('\n' + 'License: ' + this.license);
+        console.log('\n' + 'Driver Data : ');
         console.log(this.driver);
     } 
 }

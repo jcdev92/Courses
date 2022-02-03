@@ -1,11 +1,10 @@
 class Account { 
-    constructor(id, name, document, email, password, license) {
-        this.id = id;                                   // integrate
+    constructor(name, document) {
+        this.id;                                        // integer
         this.name = name;                               // string
-        this.document = document;                       // integrate
-        this.email = email;                             // string
-        this.password = password;
-        this.license = license;                       // string
+        this.document = document;                       // integer
+        this.email;                                     // string
+        this.password;                                  // Integer
     }
 }
 
