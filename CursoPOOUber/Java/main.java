@@ -2,12 +2,16 @@ package Java;
 
 class Main {
     public static void main(String[] args) {
-        Car car = new Car("AMQ123", new Account("Andres Herrera", "AND123"));
-        car.passenger = 4;
-        car.printDataCar();
+        UberX chevy = new UberX("KIO291", new Account("Carlitos Duran", "2585123"), "Chevrolet", "Chevy");
+        // chevy.passenger = 4; 
+        chevy.setPassenger(3);
+        chevy.printDataCar();
+        
 
-        Car car2 = new Car("QWE567", new Account("Andrea Herrera", "ANDA876"));
-        car2.passenger = 3;
-        car2.printDataCar();
+        UberPool patrol = new UberPool("LP012I", new Account("Eusebio Sacristan", "6185796"),"Nissan", "Patrol");
+        // patrol.passenger = 3;
+        patrol.setPassenger(4);
+        patrol.printDataCar();
+        
     }
 }
