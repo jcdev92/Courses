@@ -31,7 +31,9 @@ from UberVan import uberVan
 
 if __name__ == "__main__":
     spark = uberX('SA4521C5D', Account('Pedrito Fra', '18451912'), 'chevrolet', 'spark')
-    print('\n' + 'UberX Car: ')
-    print(vars(spark))
-    print('\n' +'Driver Data: ')
-    print(vars(spark.driver))
+    spark.passenger = 4
+    spark.printDataUberX()
+
+    sedan = uberPool('215647L', Account('Pedro Sanchez', '8512961'), 'Nissan', 'Sedan')
+    sedan.passenger = 3
+    sedan.printDataUberPool()    

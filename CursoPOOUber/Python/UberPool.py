@@ -8,3 +8,8 @@ class uberPool(Car):
         super().__init__(license, driver)
         self.brand = brand
         self.model = model
+
+    def printDataUberPool(self):
+        super().printDataCar()
+        print("Model: ", self.model)
+        print("Brand: ", self.brand, "\n")

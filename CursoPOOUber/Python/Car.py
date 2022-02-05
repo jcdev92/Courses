@@ -9,4 +9,10 @@ class Car:
     def __init__(self, license, driver):
         self.license = license
         self.driver = driver
+
+    def printDataCar(self):
+        print('License: ', self.license)
+        print('Driver Data: ', self.driver)
+        print('Number of passenger: ', self.passenger)
+
     

@@ -9,3 +9,7 @@ class uberX(Car):
         self.brand = brand
         self.model = model
     
+    def printDataUberX(self):
+        super().printDataCar()
+        print("Model: ", self.model)
+        print("Brand: ", self.brand, "\n")
