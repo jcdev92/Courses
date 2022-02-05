@@ -2,9 +2,9 @@ package Java;
 
 public class Car {
     Integer id;
-    String license;
-    Account driver;
-    private Integer passenger;
+    private String license;
+    private Account driver;
+    protected Integer passenger;
 
     public Car(String license, Account driver) {
         this.license = license;
@@ -19,14 +19,17 @@ public class Car {
         if (passenger > 0 && passenger <= 4) {
             this.passenger = passenger;
         } else {
-            System.out.println("Solo pueden viajar de 1 hasta 4 pasajeros en maximo, en el vehiculo");
+            System.out.println("\n");
+            System.out.println("Solo pueden viajar de 1 hasta 4 pasajeros maximo, en este vehiculo");
         }
 
     }
     
     void printDataCar() {    
         if (passenger != null) {
-            System.out.println("License: " + license + " Driver: " + driver.name);
+            System.out.println("\n");
+            System.out.println("License: " + license);
+            System.out.println("Driver: " + driver.name);
             System.out.println("Passenger: " + passenger);
         }
     }
