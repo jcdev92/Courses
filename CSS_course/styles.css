@@ -1,0 +1,31 @@
+/* Pseudo clases y Pseudo elementos */
+
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    background-color: darkgray;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: lightcoral;
+}
+
+.main-nav__item a:hover {
+    color: lightgray;
+}
+
+.main-nav__item a:active { 
+    color: palegoldenrod;
+}
+
+.main-nav__item a::after {
+    content: " | ";
+}
