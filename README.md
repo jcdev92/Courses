@@ -1,3 +1,3 @@
 # Git_Projects
-# print(hello wolrd! i am a data analisys and web develpment student, from platzi, google coursera and udemy).
-# This Project is a personal git testing while im doing programming lenguages and data science careers.
+# print(hello wolrd!) i am a data scientist and web develpment student, from platzi academy, google coursera and udemy.
+# Im using this repo to upload my studies developer tests and programs.
