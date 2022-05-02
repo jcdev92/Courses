@@ -1,0 +1,62 @@
+
+RUTAS TARJETAS INFORMATIVAS DE GOOGLE
+
+
+XPATH 
+
+
+HEADER DE LA TARJETA / TITULO DEL NEGOCIO
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[1]/div/div[1]/div/div[1]/h2/span
+
+	$x('/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[1]/div/div[1]/div/div[1]/h2/span/text()').map(x => x.wholeText)
+
+	devuelve un array con el texto de la etiqueta final span, es decir el titulo del tarjeton/nombre del negocio.
+
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[1]/div/div[1]/div/div[1]/h2/span
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[1]/div/div[1]/div/div[2]/h2/span
+
+Backup
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[1]/div/div[1]/div/div[1]/h2/span
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[1]/div/div[1]/div/div[1]/h2/span
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[1]/div/div[1]/div/div[2]/h2/span
+
+
+
+
+
+DIRECCION DEL NEGOCIO EN LA TARJETA
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[3]/div/div[2]/div/div/span[2]
+
+Backup
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[3]/div/div[2]/div/div/span[2]
+
+
+
+
+NUMERO DE TELEFONO DEL NEGOCIO EN LA TARJETA
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[5]/div/div/span[2]/span/a/span/span
+
+backup
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[5]/div/div/span[2]/span/a/span/span
+
+
+
+
+
+WEBSITE PATH
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[1]/div/div[1]/div/div[2]/div/div[1]/a
+
+Backup
+
+/html/body/div[6]/div/div[9]/div[2]/div/div[2]/async-local-kp/div/div/div[1]/div/div/block-component/div/div[1]/div/div/div/div[1]/div/div/div[1]/div/div[1]/div/div[2]/div/div[1]/a
