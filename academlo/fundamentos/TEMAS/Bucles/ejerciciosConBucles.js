@@ -3,6 +3,11 @@
 /**************************/
 
 // 1. Crea un arreglo con los números del 1 al 400
+numeros = 0
+while (numeros < 401) {
+  numeros++
+}
+console.log(numeros)
 
 // 2. Crea una función que reciba como parámetros 2 números, y retorne un arreglo con todos los valores en el rango de esos 2 números (incluyéndolos), por ejemplo, si recibe 1 y 4 la función debe de retornar el arreglo [1, 2, 3, 4], asumiremos que el segundo parámetro recibido es mayor al primero.
 
