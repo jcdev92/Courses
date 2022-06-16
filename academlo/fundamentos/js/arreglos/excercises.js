@@ -35,10 +35,9 @@ function mergeData(users, attendances) {
   // Recuerda que en esta prueba debes "retornar" el resultado
   allData = users.concat(attendances)
   for (i in allData) {
-    // console.log(allData[i])
     for (j in allData[i]) {
       if (allData[i][j] == allData[i][j]) {
-        allData.splice(j,2)
+        console.log(j)
       }
     }
   }
