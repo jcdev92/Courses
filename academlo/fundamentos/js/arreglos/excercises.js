@@ -87,5 +87,64 @@
 
 // -------------------------------------------------------------------------------------- //
 
+// students = [
+//   { name: 'Georg', email: 'georg@academlo.com', country_id: 1 },
+//   { name: 'Andrea', email: 'andrea@gmail.com', country_id: 2 },
+//   { name: 'Daniela', email: 'daniela@gmail.com', country_id: 2 },
+//   { name: 'Mónica', email: 'monica@gmail.com', country_id: 2 }
+// ]
+
+// countries = [
+//   { id: 1, name: 'Mexico', },
+//   { id: 2, name: 'Colombia' }
+// ]
+
+// countryName = 'Colombia'
+// function countStudents(students, countries, countryName) {
+//   totalStudents = 0;
+//   for (let i = 0; i < countries.length; i++) {
+//     if (countries[i].name == countryName) {
+//       for (let j = 0; j < students.length; j++) {
+//         if (students[j].country_id == countries[i].id) {
+//           totalStudents += 1
+//         }   
+//       }
+//     }
+//   }
+//   // escribe tu solución aquí
+//   // Recuerda que en esta prueba debes "retornar" el resultado
+//   // por ejemplo en el siguiente ejemplo tendrías el resultado en la variable totalStudents
+//   // return totalStudents;
+//   console.log("Total students: " + totalStudents)
+//   return totalStudents;
+// }
+
+// countStudents(students, countries, countryName)
+
+// -------------------------------------------------------------------------------------- //
+
+estudiantes = [
+  { name: 'Daniela', age: 25 },
+  { name: 'Andrea', age: 23 },
+  { name: 'José', age: 27 },
+  { name: 'Georg', age: 23 },
+];
 
 
+function findMostCommonAge(students) {
+  mostCommonAge = []
+  counter = 0
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].age) {
+      counter += 1
+      mostCommonAge.push(students[i].age)
+    }
+  // escribe tu solución aquí
+  // Recuerda que en esta prueba debes "retornar" el resultado
+  // por ejemplo en el siguiente ejemplo tendrías el resultado en la variable mostCommonAge
+  console.log(counter)
+  console.log(mostCommonAge)
+  return mostCommonAge;
+  }
+}
+findMostCommonAge(estudiantes)
