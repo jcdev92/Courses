@@ -85,7 +85,9 @@
 // console.log(orderStudentsByScore(stud3));
 // console.log(orderStudentsByScore(stud4));
 
+
 // -------------------------------------------------------------------------------------- //
+
 
 // students = [
 //   { name: 'Georg', email: 'georg@academlo.com', country_id: 1 },
@@ -121,30 +123,170 @@
 
 // countStudents(students, countries, countryName)
 
+
 // -------------------------------------------------------------------------------------- //
 
-estudiantes = [
-  { name: 'Daniela', age: 25 },
-  { name: 'Andrea', age: 23 },
-  { name: 'José', age: 27 },
-  { name: 'Georg', age: 23 },
-];
+
+// estudiantes = [
+//   { name: 'Daniela', age: 25 },
+//   { name: 'Andrea', age: 23 },
+//   { name: 'José', age: 27 },
+//   { name: 'Georg', age: 23 },
+// ];
 
 
-function findMostCommonAge(students) {
-  mostCommonAge = []
-  counter = 0
+// function findMostCommonAge(students) {
+//   mostCommonAge = 0
+//   for (let i = 0; i < students.length; i++) {
+//     if (students[i+=1].age === students[i].age) {
+//       mostCommonAge = students[i].age;
+//     }
+//   }
+//   console.log(mostCommonAge)
+//   return mostCommonAge;
+// }
+
+// findMostCommonAge(estudiantes)
+
+
+// -------------------------------------------------------------------------------------- //
+
+
+// const users = [
+//   {
+//       name: 'Erik',
+//       gender: 'male',
+//       age: 22,
+//   },
+//   {
+//       name: 'Daniela',
+//       gender: 'female',
+//       age: 22,
+//   },
+//   {
+//       name: 'Gustavo',
+//       gender: 'male',
+//       age: 49,
+//   },
+//   {
+//       name: 'María',
+//       gender: 'female',
+//       age: 35,
+//   },
+// ];
+
+// let nombre = 'Gustavo';
+
+// function findUser(users, nombre) {
+//   for (let i = 0; i < users.length; i++) {
+//     if (users[i].name == nombre){
+//       usuario = users[i];
+//     }
+//   }
+//   console.log(usuario);
+//   return usuario;
+// }
+// findUser(users, nombre)
+
+
+// -------------------------------------------------------------------------------------- //
+
+
+// usuarios = [
+//   { name: 'Erik', email: 'erik@academlo.com', channel: 'youtube', application: null },
+//   { name: 'Georg', email: 'georg@gmail.com', channel: 'facebook', application: { country: 'Mexico', state: 'Nuevo León' }},
+//   { name: 'Daniela', email: 'daniela@gmail.com', channel: 'youtube', application: { country: 'Colombia', state: 'Bogotá' }}
+// ];
+
+// function getApplications(users) {
+//   usersWithApplications = []
+//   for (let i = 0; i < users.length; i++) {
+//     if (users[i].application !== null) {
+//       usersWithApplications.push(users[i]);
+//     }
+//   }
+//   console.log(usersWithApplications)
+//  return usersWithApplications;
+// }
+
+// getApplications(usuarios);
+
+
+// -------------------------------------------------------------------------------------- //
+
+
+// function sumEvens(start, end) {
+//   sum = 0
+//   for (let i = start+1; i <= end-1; i++) {
+//     if (i%2 == 0){
+//       sum += i
+//     }
+//   }
+//   console.log(sum)
+//   return sum
+// }
+
+// sumEvens(1, 10)
+// sumEvens(20, 30)
+// sumEvens(34, 48)
+
+
+// -------------------------------------------------------------------------------------- //
+
+
+// function getMultiples(number, limit) {
+//     multiples = []
+//     for (let i = number+1; i <= limit-1; i++) {
+//       if (i%number === 0) {
+//         multiples.push(i)
+//       }
+//     }
+//   console.log(multiples)
+//   return multiples;
+// }
+
+// getMultiples(20, 100)
+
+
+// -------------------------------------------------------------------------------------- //
+
+
+// phrase = "Hola, me llamo Erik"
+// letter = "a"
+
+// function countLetter(phrase, letter) {
+//   total = 0
+//   for (let i = 0; i < phrase.length; i++) {
+//     if (phrase[i] === letter) {
+//       total += 1
+//     }
+//   }
+//   console.log(total)
+//   return total;
+// }
+
+// countLetter(phrase, letter)
+
+
+// -------------------------------------------------------------------------------------- //
+
+
+usuarios = [
+  { name: 'Andrea', email: 'andrea@gmail.com', channel: 'youtube', application: null },
+  { name: 'Daniela', email: 'daniela@gmail.com', channel: 'youtube', application: { country: 'Colombia', state: 'Bogotá' } },
+  { name: 'Alondra', email: 'alondra@gmail.com', channel: 'twitter', application: { country: 'Colombia', state: 'Bogotá' } },
+  { name: 'Luis', email: 'luisa@gmail.com', channel: 'twitter', application: { country: 'México', state: 'Nuevo León' } }
+  ];
+
+function countApplicationsByChannel(students) {
+  usersWithApplications = []
   for (let i = 0; i < students.length; i++) {
-    if (students[i].age) {
-      counter += 1
-      mostCommonAge.push(students[i].age)
+    if (students[i].application !== null) {
+      usersWithApplications.push(students[i]);
     }
-  // escribe tu solución aquí
-  // Recuerda que en esta prueba debes "retornar" el resultado
-  // por ejemplo en el siguiente ejemplo tendrías el resultado en la variable mostCommonAge
-  console.log(counter)
-  console.log(mostCommonAge)
-  return mostCommonAge;
   }
+  console.log(usersWithApplications)
+ return usersWithApplications;
 }
-findMostCommonAge(estudiantes)
+
+countApplicationsByChannel(usuarios);
