@@ -278,15 +278,24 @@ usuarios = [
   { name: 'Luis', email: 'luisa@gmail.com', channel: 'twitter', application: { country: 'México', state: 'Nuevo León' } }
   ];
 
+
 function countApplicationsByChannel(students) {
-  usersWithApplications = []
+  let count = 0;
+  let applicationChannel = {};
+
   for (let i = 0; i < students.length; i++) {
     if (students[i].application !== null) {
-      usersWithApplications.push(students[i]);
+      channel = students[i].channel;
+      for (let j=i-1; j >= 0; j--) {
+        if (students[i].channel === students[j].channel) {
+          count += 1;
+          applicationChannel[channel] = count;
+        }
+      }
     }
   }
-  console.log(usersWithApplications)
- return usersWithApplications;
+  console.log(applicationChannel)
+  return applicationChannel;
 }
 
 countApplicationsByChannel(usuarios);
