@@ -1,0 +1,51 @@
+.box {
+    margin: 50px;
+    height: 500px;
+    width: 500px;
+    border: 2px;
+    border-style: dashed;
+}
+
+.child {
+    margin: 0px;
+    height: 226px;
+    width: 226px;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+}
+
+.top-left {
+    background-image: url("https://cliparting.com/wp-content/uploads/2018/03/cool-pictures-2018-2.jpg");
+    background-size: 330px;
+    background-position: center;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-color: grey;
+}
+
+.top-right {
+    background-color: red;
+    margin-top: -245px;
+    margin-left: 250px;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-color: grey;
+}
+
+.bottom-left {
+    background-color: salmon;
+    margin-bottom: 235px;
+    border-left: 10px;
+    border-right: 10px;
+    border-color: cyan;
+}
+
+.bottom-right {
+    background-color: green;
+    margin-top: -483px;
+    margin-left: 250px;
+    border-left: 10px;
+    border-right: 10px;
+    border-color: cyan;
+}

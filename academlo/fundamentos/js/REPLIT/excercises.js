@@ -280,18 +280,27 @@ usuarios = [
 
 
 function countApplicationsByChannel(students) {
-  let count = 0;
   let applicationChannel = {};
-
+  let countTwitter = 0;
+  let counttYoutube = 0;
+  let countFacebook = 0;
+  let countInstagram = 0;
   for (let i = 0; i < students.length; i++) {
     if (students[i].application !== null) {
       channel = students[i].channel;
-      for (let j=i-1; j >= 0; j--) {
-        if (students[i].channel === students[j].channel) {
-          count += 1;
-          applicationChannel[channel] = count;
+        if (students[i].channel === 'twitter') { 
+          countTwitter += 1
+          applicationChannel[channel] = countTwitter;
+        } else if (students[i].channel === 'youtube') { 
+          counttYoutube += 1;
+          applicationChannel[channel] = counttYoutube; 
+        } else if (students[i].channel === 'facebook') { 
+          countFacebook += 1;
+          applicationChannel[channel] = countFacebook;
+        } else if (students[i].channel === 'instagram') {
+          countInstagram += 1;
+          applicationChannel[channel] = countInstagram;
         }
-      }
     }
   }
   console.log(applicationChannel)
