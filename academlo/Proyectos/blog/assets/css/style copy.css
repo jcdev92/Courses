@@ -1,0 +1,92 @@
+
+/* selector de elemento | tipo */
+p {
+  color: green;
+}
+
+p {
+  color: palevioletred;
+}
+
+/* selector clase . */
+.parrafo1 {
+  color: blue;
+}
+
+.size-2rem {
+  font-size: 2rem;
+}
+
+/* Selector de ID # */
+#parrafo2 {
+  color: aqua;
+}
+
+/* pseudo-clases */
+p:hover {
+  color: orangered;
+}
+
+/* pseudo-elementos */
+.parrafo1::before {
+  content: "📁";
+}
+
+.parrafo1::after {
+  content: "↗️";
+}
+
+[href="#"] {
+  color: black;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: #333;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 992px;
+  margin: 0 auto; 
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/profile.png");
+  background-size: contain;
+  border-radius: 50%;
+}
+
+/* .image-container img {
+  border-radius: 50%;
+} */
+
+p {
+  width: 100%;
+  padding: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .image-container {
+    order: 2;
+  }
+
+  p {
+    width: 50%;
+    order: 1;
+  }
+}

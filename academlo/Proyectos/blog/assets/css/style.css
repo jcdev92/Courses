@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+.header {
+  height: 50vh;
+  background-image: url("https://cdn.wallpapersafari.com/11/17/JlHfh0.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 100px 0;
+}
+
+.header h1,
+.header p {
+  margin-top: 0;
+  margin-bottom: .25rem;
+}
+
+/* card featured */
+.card i {
+  font-size: 2rem;
+}
+
+/* banners */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.banner >* {
+  width: 125px;
+  height: 125px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+}
+
+.banner-y {
+  width: 100%;
+  height: 750px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
